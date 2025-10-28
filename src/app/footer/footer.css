@@ -1,0 +1,52 @@
+.full-footer{
+    background-color: rgba(0, 0, 0, 0.934);
+    color: white;
+    height:150px;
+}
+
+.copyright{
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+}
+
+.copyrighttext{
+    padding-top: 10px;
+}
+
+
+.footer-image{
+    padding: 10px 15px;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.footer-image:hover{
+    color: purple;
+}
+
+.image-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: 10px;
+    
+}
+
+.menu-link-footer{
+   padding-right: 20px;
+   padding-left: 20px;
+   margin-bottom: 10px;
+   text-decoration: none;
+   color: aliceblue;
+   font-size: 17px;
+}
