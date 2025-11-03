@@ -106,7 +106,7 @@
 .image-box {
   width: 500px; 
   height: 500px; 
-  border: 2px solid black;
+  border: 2px solid black; 
   border-radius: 8px;
   margin: 50px 4px 34px 50px;
   display: flex;
