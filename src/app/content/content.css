@@ -1,3 +1,5 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 .home {
     display: flex;
     justify-content: space-between;
@@ -57,29 +59,238 @@
 }
 
 .image {
-    width: 800px;
+    width: 700px;
     height: 900px;
 }
 
-.htmlLogo{
+.htmlLogo {
     padding-left: 0px;
     padding-top: 20px;
 }
 
-.htmlLogoBelow{
+.htmlLogoBelow {
     padding-left: 88px;
     padding-bottom: 0px;
 }
 
-.logo{
-    padding:25px;
-    width:135px;
-    height:135px;
+.logo {
+    padding: 25px;
+    width: 135px;
+    height: 135px;
     margin-left: 49px;
 }
 
-.logoBelow{
-     padding:35px;
-    width:135px;
-    height:135px;
+.logoBelow {
+    padding: 35px;
+    width: 135px;
+    height: 135px;
+}
+
+.container {
+    display: flex;
+    /* places items in same line */
+    gap: 10px;
+    /* space between boxes */
+}
+
+.small-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.image-box {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 50px 4px 34px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* ensures image stays inside the box */
+}
+
+.computer_logo_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or use cover if you want it to fill the box */
+}
+
+
+
+
+.about-title {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: 3px solid gold;
+  border-radius: 12px;
+  padding: 14px 45px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 15px rgba(106, 17, 203, 0.4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Effect */
+.about-title:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(37, 117, 252, 0.5);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  border-color: #fff;
+  color: gold;
+}
+
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info{
+    margin-top: 50px;
+
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg,Light,Light,Light);
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+.about-card {
+  max-width: 750px;
+  background: rgba(25, 0, 40, 0.9); /* Deep purple tone */
+  padding: 50px 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(128, 0, 255, 0.3);
+  border: 1px solid rgba(186, 85, 255, 0.3);
+  backdrop-filter: blur(18px);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(186, 85, 255, 0.7);
+}
+
+.about-card h2 {
+  font-size: 2.8rem;
+  color: #bf9fff; /* Soft lilac-purple */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(128, 0, 255, 0.6);
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #e8d9ff; /* Light lavender for readability */
+  letter-spacing: 0.5px;
+}
+
+.about-card span {
+  color: #c77dff; /* Bright violet accent */
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.8);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.small-box-about {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 35px 40px;
+  transition: transform 0.3s ease, background 0.4s ease;
+  cursor: pointer;
+  width: 200px;
+}
+
+.small-box-about:nth-child(1) {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+.small-box-about:nth-child(2) {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+}
+.small-box-about:nth-child(3) {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+.small-box-about:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+.number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box-text {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container-about {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .small-box-about {
+    width: 80%;
+  }
 }
