@@ -6,7 +6,6 @@ import { App } from './app';
 import { UserList } from './user-list/user-list';
 import { HttpClientModule } from '@angular/common/http';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { DataAttribute } from './data-attribute/data-attribute';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { Content } from './content/content';
@@ -14,7 +13,6 @@ import { Content } from './content/content';
   declarations: [
     App,
     UserList,
-    DataAttribute,
     Header,
     Footer,
     Content
