@@ -47,20 +47,19 @@
 .shortDescription {
     font-size: 35px;
     font-weight: bold;
-    padding-left: 20px;
     padding-top: 32px;
 }
 
 .shortDescriptionNote {
     font-size: 27px;
     font-weight: bolder;
-    padding-left: 39px;
     padding-top: 12px;
 }
 
 .image {
     width: 700px;
     height: 900px;
+    
 }
 
 .htmlLogo {
@@ -78,6 +77,13 @@
     width: 135px;
     height: 135px;
     margin-left: 49px;
+}
+
+.logohtml {
+    padding: 25px;
+    width: 135px;
+    height: 135px;
+    
 }
 
 .logoBelow {
@@ -143,6 +149,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 /* Hover Effect */
@@ -284,7 +291,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container-about {
     flex-direction: column;
     gap: 20px;
@@ -292,5 +299,263 @@
 
   .small-box-about {
     width: 80%;
+  }
+} */
+
+/* 📱 Responsive Design for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    padding-top: 60px;
+    padding-left: 0;
+    margin: 15px;
+    font-size: xx-large;
+  }
+
+  .roleName {
+    font-size: xx-large;
+    border-right-width: 2px;
+    margin-left: 190px;
+  }
+
+  .shortDescription {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .shortDescriptionNote {
+    font-size: 22px;
+  }
+
+  .image {
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px;
+
+  }
+
+  .image-box {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+  }
+
+  .logo,
+  .logohtml,
+  .logoBelow {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-info {
+    margin-top: 20px;
+  }
+
+  .about-card {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .about-card h2 {
+    font-size: 2rem;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+  }
+
+  .container-about {
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 15px;
+  }
+
+  .small-box-about {
+    width: 80%;
+    padding: 25px 20px;
+  }
+}
+
+/* 📱 Mobile Devices (below 600px) */
+@media (max-width: 600px) {
+  .text {
+    font-size: x-large;
+    padding-top: 40px;
+  }
+
+
+
+  .roleName {
+    font-size: large;
+    border-right-width: 2px;
+    margin-left: 80px;
+  }
+
+  .shortDescription {
+    font-size: 22px;
+  }
+
+  .shortDescriptionNote {
+    font-size: 18px;
+  }
+
+  .image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .image-box {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    margin-top: 50px;
+  }
+
+  .about-title {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .about-card {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .about-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  .box-text {
+    font-size: 14px;
+  }
+
+  .small-box-about {
+    width: 90%;
+    padding: 20px 15px;
+  }
+}
+
+/*  */
+
+@media (max-width: 1024px) {
+  .logo,
+  .logohtml,
+  .logoBelow {
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle; /* keeps all in same line */
+  }
+
+  .htmlLogo,
+  .htmlLogoBelow {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .logohtml {
+    margin-right: 0px; 
+  }
+}
+
+
+@media (max-width: 600px) {
+  .logo,
+  .logohtml,
+  .logoBelow {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin: 6px;
+    display: inline-block;
+    vertical-align: middle; /* ensures same row alignment */
+  }
+
+  .htmlLogo,
+  .htmlLogoBelow {
+    padding-left: 0;
+    padding-top: 8px;
+  }
+
+  .logohtml {
+    margin-right: 0px; /* same here */
+  }
+}
+
+
+
+  
+.experience-box {
+  background: rgba(1, 1, 1, 0.994);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  backdrop-filter: blur(10px);
+  animation: glowBox 4s infinite alternate;
+}
+
+@keyframes glowBox {
+  from {
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+  }
+}
+
+.glow-title {
+  font-size: 2em;
+  text-align: center;
+  color: #fdfafa;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight : bolder;
+}
+
+.magic-text {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #fff;
+  background: linear-gradient(90deg, #ff00ff, #00eaff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: glowFlow 6s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes glowFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
   }
 }

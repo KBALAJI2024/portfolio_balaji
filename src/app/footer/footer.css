@@ -1,52 +1,130 @@
-.full-footer{
+.full-footer {
     background-color: rgba(0, 0, 0, 0.934);
     color: white;
-    height:150px;
+    padding: 20px 0;
+    height: auto;
 }
 
-.copyright{
+.copyright {
     background-color: black;
     color: aliceblue;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     display: flex;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.copyrighttext{
-    padding-top: 10px;
+.copyrighttext {
+    padding-top: 5px;
+    font-size: 14px;
 }
 
-
-.footer-image{
+.footer-image {
     padding: 10px 15px;
     margin: 10px;
     color: aliceblue;
+    font-size: 22px;
+    transition: color 0.3s ease;
 }
 
-.footer-image:hover{
+.footer-image:hover {
     color: purple;
 }
 
-.image-link{
+.image-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.menu-footer{
+.menu-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    flex-wrap: wrap;
     margin: 10px;
-    
+    text-align: center;
 }
 
-.menu-link-footer{
-   padding-right: 20px;
-   padding-left: 20px;
-   margin-bottom: 10px;
-   text-decoration: none;
-   color: aliceblue;
-   font-size: 17px;
+.menu-link-footer {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.menu-link-footer:hover {
+    color: purple;
+}
+
+/* 🌐 Laptop and Desktop (1025px and up) */
+@media (min-width: 1025px) {
+    .full-footer {
+        height: 160px;
+    }
+
+    .menu-link-footer {
+        font-size: 18px;
+    }
+
+    .footer-image {
+        font-size: 24px;
+    }
+}
+
+/* 💻 Tablet (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .menu-footer {
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+
+    .menu-link-footer {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .footer-image {
+        font-size: 20px;
+        margin: 8px;
+    }
+}
+
+/* 📱 Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .full-footer {
+        text-align: center;
+        padding: 15px 5px;
+    }
+
+    .menu-footer {
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .menu-link-footer {
+        display: block;
+        padding: 5px 0;
+        font-size: 15px;
+    }
+
+    .image-link {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-image {
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .copyrighttext {
+        font-size: 12px;
+        padding: 5px 0;
+    }
 }

@@ -1,57 +1,194 @@
-.full-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    background-color : purple;
-    color: aliceblue;
-    align-items: center;
-    height: 95px;
+.full-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: purple;
+  color: aliceblue;
+  height: 80px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
-.logo{
-    display: flex;
-    padding: 5px;
-    border-radius: 35px;
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 35px;
 }
 
-.company-name{
-    display: flex;
-    padding: 5px;
-    color: aliceblue;
-    font-size : 20px;
-    font-weight: bold;
-    align-items: center;
+.company-name {
+  color: aliceblue;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
-/* .nav-menu{
-    justify-content: center;
-    align-items: center;
-} */
-
+/* Navigation Menu */
 .nav-menu {
   display: flex;
   align-items: center;
 }
 
-.list-nav{
+.list-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #e0e0e0;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.item a:hover {
+  color: #00eaff;
+  background: rgba(0, 234, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00eaff, #00ffaa);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.item a:hover::after {
+  width: 80%;
+}
+
+/* =============================== */
+/* 🌐 RESPONSIVE DESIGN SECTION */
+/* =============================== */
+
+/* 📱 Mobile (up to 600px) */
+/* =============================== */
+/* 🌐 UPDATED RESPONSIVE DESIGN */
+/* =============================== */
+
+/* 📱 Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .full-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    width: 100%;
     display: flex;
-    list-style: none;
-    padding-top: 8px;
-    margin: 20px;
+    justify-content: center;
+  }
+
+  .list-nav {
+    display: flex;
+    flex-direction: row; /* ✅ keep horizontal */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* ✅ prevent wrapping */
+    width: auto;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+
+  .item a {
+    font-size: 14px;
+    padding: 6px 10px;
+    white-space: nowrap; /* ✅ keeps text from breaking */
+  }
+}
+
+/* 💻 Tablet (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .full-nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 25px;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .list-nav {
+    display: flex;
+    flex-direction: row; /* ✅ horizontal layout */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 12px;
+
+  }
+
+  .item a {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
 }
 
 
-.item {
-  cursor: pointer;
-  font-weight: 500;
-  color: white;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 10px 35px;
-  border-radius: 5px;
-}
+/* 💻 Large screens (above 1024px) */
+@media (min-width: 1025px) {
+  .full-nav {
+    height: 95px;
+  }
 
+  .company-name {
+    font-size: 22px;
+  }
 
-.item:hover {
-  color: white;
-  background-color: #007bff;
+  .item a {
+    font-size: 17px;
+  }
 }
